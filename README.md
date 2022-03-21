@@ -37,4 +37,4 @@ A: By providing the model with semantically meaningless images and perturbing th
 ##  Custom Loss Functions
 We also provide the capability to use custom loss functions to perform other generative tasks. For example we recreate the latent representation inversion from https://github.com/MadryLab/robust_representations/blob/master/image_inversion.ipynb.
 
-![Inversion](images/inversion.png)
+![Inversion](images/inversion_cor.png)
