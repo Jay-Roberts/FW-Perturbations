@@ -3,10 +3,11 @@
 This is the corresponding codebase for the paper: *Controllably Sparse Perturbations of Robust Classifiers for Explaining Predictions and Probing Learned Concepts* published in Eurgraphics Assocition MLVis 2021: [here](https://diglib.eg.org/bitstream/handle/10.2312/mlvis20211072/001-005.pdf).
 
 
-The method of perturbation based counterfactuals was based on the generative properties of adversarially robust CNNs. Our contributions were 
+The method of perturbation based counterfactuals was inspired by the generative properties of adversarially robust CNNs. Our contributions were 
 
 1. Extending the perturbation method to discover concepts learned by the models.
-2. Develop a new perturbation method (FW-L1-q) that allows one to generate controllable sparse perturbations which reveal highly localized human aligned features leaned by robust models.
+2. Replacing the commong PGD optimizer with a more flexible Frank-Wolfe (FW) based one.
+3. Develop a new perturbation method (FW-L1-q) that allows one to generate controllable sparse perturbations which reveal highly localized human aligned features leaned by robust models.
 
 
 We've added an anaconda `environment.yaml` that has all the package requirements.
@@ -34,10 +35,6 @@ A: By providing the model with semantically meaningless images and perturbing th
 
 
 ##  Custom Loss Functions
-We also provide the capability to use custom loss functions to perform other generative tasks. For example we recreate the latent representation inversion from
+We also provide the capability to use custom loss functions to perform other generative tasks. For example we recreate the latent representation inversion from https://github.com/MadryLab/robust_representations/blob/master/image_inversion.ipynb.
 
 ![Inversion](images/inversion.png)
-
-
-### References
-[1] Madry Lab
